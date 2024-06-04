@@ -258,22 +258,20 @@ transform: rotate(180deg);
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
- 
     width: 0;
     height: 10px;
     background-color: rgb(86,86,153,1);
     border-radius: 1000px;
-
     animation-duration: 3s;
     animation-delay: 2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
- }
+}
 
- .skills-container li.html::after{
-     animation-name: html;
- }
+.skills-container li.html::after{
+    animation-name: html;
+}
 
  @keyframes html{
      to{
@@ -301,6 +299,34 @@ transform: rotate(180deg);
       }
   }
  
+  .skills-container li.js::after{
+    animation-name: javascript;
+ }
+ 
+ @keyframes javascript{
+     to{
+         width: 75%;
+     }
+ }
+ 
+ .skills-container li.reactjs::after{
+    animation-name: react;
+ }
+ 
+ @keyframes react{
+     to{
+         width: 75%;
+     }
+ }
+ .skills-container li.wp::after{
+    animation-name: wordpress;
+ }
+ 
+ @keyframes wordpress{
+     to{
+         width: 75%;
+     }
+ }
  
   .skills-container li.git::after{
      animation-name: github;
